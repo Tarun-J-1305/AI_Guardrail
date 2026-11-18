@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+security_audit.log
+company.db
+.env

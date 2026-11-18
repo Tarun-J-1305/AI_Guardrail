@@ -1,0 +1,17 @@
+{
+  "allowed_directory": "./safe_workspace",
+  "blocked_files": ["passwords.txt", ".env", "secret_keys.json"],
+  "untrusted_files": ["feedback.txt"],
+  "allowed_email_domains": ["@mycompany.com"],
+  "require_approval_for_emails": true,
+  "max_tool_calls_per_session": 5,
+  "max_email_length": 2000,
+  "dlp_blocked_patterns": [
+    "AIzaSy[0-9A-Za-z_-]{33}",
+    "AKIA[0-9A-Z]{16}",
+    "(?i)(password|secret|api_key|token)\\s*[:=]\\s*\\S+"
+  ],
+  "database_path": "company.db",
+  "blocked_db_tables": ["users", "admins", "credentials"],
+  "allowed_url_domains": ["api.mycompany.com", "docs.python.org"]
+}
